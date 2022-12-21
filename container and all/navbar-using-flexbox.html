@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation of Flex Box</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            color: whitesmoke;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        ul {
+            display: flex;
+            /* height: inherit;
+            width: inherit; */
+            height: 45px;
+            width: 100%;
+            background-color: #282a35;
+            justify-content: left;
+            padding: 5px;
+        }
+
+        ul li a {
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+            margin: 4px;
+            padding: 7px;
+            text-decoration: none;
+            flex-wrap: wrap;
+        }
+
+        header nav ul li {
+            list-style: none;
+        }
+
+        a:hover {
+            border-left: 5px solid rgb(59, 13, 13);
+            border-radius: 5px;
+            background-color: #263269;
+            /* border: 1px solid cyan;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            text-decoration: underline; */
+        }
+
+        /* a:active {
+            text-decoration: underline;
+        } */
+        #item-4 {
+            /* align-self: ; */
+            order: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#" id="item-4">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation of Flex Box</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+            color: whitesmoke;
+        }
+
+
+        ul {
+            display: flex;
+            border: 2px solid red;
+            background-color: #282a35;
+            justify-content: left;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+        }
+
+        header nav ul li {
+            margin: 10px;
+            list-style: none;
+        }
+
+        a:hover {
+            border-left: 5px solid rgb(59, 13, 13);
+            border-radius: 5px;
+            background-color: #263269;
+        }
+
+        #item-1 {
+            order: 1;
+        }
+
+        #item-2 {
+            order: 1;
+        }
+
+        #item-3 {
+            order: 3;
+            flex-basis: 300px;
+        }
+
+        #item-4 {
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="items">
+                    <li><a href="#" id="item-1">Home</a></li>
+                </div>
+                <div class="items">
+                    <li><a href="#" id="item-2">News</a></li>
+                </div>
+                <div class="items">
+                    <li><a href="#" id="item-3">About</a></li>
+                </div>
+                <div class="items">
+                    <li><a href="#" id="item-4">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html> -->
