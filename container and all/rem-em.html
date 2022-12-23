@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        /* Em Preferences :- 1st- Container, 2nd-Html, 3rd- On basis of Default size of Container
+        .
+        Rem Preferences:- 1st HTML, 2nd - On basis of default size of HTML */
+
+        html {
+            font-size: 25px;
+        }
+
+        .container {
+            /* width: 250px;
+            height: 500px; */
+            /* vw=viewportwidth and vh=viewportheight :we use % mostly while setting width */
+            width: 100vw;
+            height: 100vh;
+            font-size: 10px;
+            border: 2px solid red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            /* em resizes related to parent class  3*10=30px */
+            /* font-size: 10em;
+            padding: 3em; */
+        }
+
+        #second {
+            /* rem resizes related to main html class, here 3*25=75px; */
+            /* font-size: 3rem;
+            padding: 3rem; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is First Heading</h1>
+        <h1 id="second">This is Second Heading</h1>
+        <h1 id="third">This is Third Heading</h1>
+    </div>
+</body>
+
+</html>
