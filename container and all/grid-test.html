@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .container{
+            border:2px solid red;
+            width:900px;
+            margin:auto;
+            display:flex;
+            justify-content: space-evenly;
+            padding:40px;
+            transform:translateY(50%);
+        }
+        .items{
+            height:200px;
+            width: 100px;
+            border:2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="item-1">This is 1</div>
+        <div class="items" id="item-2">This is 2</div>
+        <div class="items" id="item-3">This is 3</div>
+        <div class="items" id="item-4">This is 4</div>
+        <div class="items" id="item-5">This is 5</div>
+    </div>
+</body>
+
+</html>
