@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar and contents using CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'blog-section blog-section blog-section ad-content'
+        }
+
+        .item {
+            background-color: red;
+
+        }
+
+        #navbar {
+            grid-area: navbar;
+            background-color: blanchedalmond;
+            padding: 10px;
+            border: 1px solid red;
+            border-radius: 7px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        ul{
+            display: grid;
+            grid-template-columns:repeat(5,50px) ;
+        }
+        li{
+            list-style: none;
+        }
+
+
+        #blog-section {
+            grid-area: blog-section;
+            text-align:justify;
+            padding:10px;
+            border-radius: 15px;
+            background-color: rgb(62, 196, 196);
+        }
+        
+        #ad-content {
+            text-align:justify;
+            grid-area: ad-content;
+            padding:10px;
+            border-radius: 15px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </div>
+        <div class="item" id="blog-section">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, neque
+            facere unde rerum ullam ipsam officiis! Perferendis, ut aliquid. Eligendi quo deserunt nulla laudantium
+            numquam voluptatibus, nesciunt quia cum quidem! Eius soluta dignissimos, iure facilis animi earum a!
+            Officiis laborum vel sunt, corporis fugit laudantium iure incidunt, reprehenderit praesentium beatae minus
+            fuga. Odio magnam inventore itaque nisi similique reiciendis quod quas deleniti, ut repellendus excepturi
+            consequatur nihil, temporibus possimus provident, exercitationem quidem porro expedita dolorem voluptate
+            harum culpa veniam! Ut quasi error eius blanditiis ratione suscipit voluptatem exercitationem illo
+            perspiciatis minus consequatur est iure incidunt nobis ducimus ipsam dolores alias labore quos, autem velit.
+            Quibusdam reiciendis ut assumenda eligendi tempore fugiat voluptatibus quia maxime iste quas, soluta
+            excepturi explicabo distinctio, quidem ea dolor. Ullam fuga cupiditate praesentium exercitationem culpa
+            maiores facere officiis, dolores debitis at nihil numquam nobis quas necessitatibus autem, quis quisquam,
+            earum porro? Hic quibusdam molestias repellendus suscipit iusto, inventore cum blanditiis, aut ea tenetur
+            aspernatur sapiente et sint obcaecati neque? Necessitatibus eum minus hic fugiat. Repudiandae quod
+            similique, voluptas fuga libero voluptatem nisi quis magni. Quaerat, quia. Non hic, tempore temporibus
+            repellat molestias perspiciatis tenetur, quidem rem veritatis reprehenderit ab recusandae pariatur dolore!
+            Laudantium alias perspiciatis quibusdam.</div>
+        <div class="item" id="ad-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea molestias, natus
+            fugit incidunt similique quas molestiae esse asperiores? Repellendus repudiandae nobis explicabo eligendi
+            vel aperiam soluta assumenda quisquam nihil nesciunt vero, eveniet voluptatum. Ad laboriosam, tenetur maxime
+            officiis possimus nesciunt suscipit esse nam reprehenderit sed explicabo aut fugit, et id?</div>
+    </div>
+</body>
+
+</html>
