@@ -10,12 +10,15 @@
 
 }
 
+/* upper portion of the page */
 #upper-part {
     display: flex;
     flex-direction: column;
     height: 85%;
     background-color: #202124;
 }
+
+/* navbar design  */
 
 .navbar {
     height: 50px;
@@ -64,6 +67,8 @@
     cursor: pointer;
 }
 
+/* middle portion of the page  */
+
 .search-box {
     display: flex;
     flex-direction: column;
@@ -76,6 +81,7 @@ img {
 }
 
 .item-1 input {
+    text-align: center;
     color: white;
     border: 1px solid #5f6368;
     background-color: transparent;
@@ -136,6 +142,47 @@ h5 a:hover {
     text-decoration: underline;
 }
 
+/* Lower portion of the page  */
+
 #lower-part {
+
     height: 15%;
+}
+
+.footer-1 {
+    height: 50%;
+    width: 100vw;
+    background-color: red;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 10px;
+}
+
+#light {
+    font-weight: lighter;
+}
+
+.footer-2 {
+    display: flex;
+    height: 50%;
+    background-color: green;
+}
+
+.navbar-2 ul {
+    display: flex;
+}
+
+.navbar-2 ul li {
+    list-style: none;
+}
+
+.navbar-2 ul li a {
+    text-decoration: none;
+}
+
+.end {
+    order: 3;
+    float: right;
 }
