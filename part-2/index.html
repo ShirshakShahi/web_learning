@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Food Site for food in Nepal | khanakhaja.com </title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:921px)" href="css/phone.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 </head>
 
@@ -16,10 +17,10 @@
             <img src="img/logo.png" alt="khanakhaja.com">
         </div>
         <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">About Us</a></li>
-            <li class="item"><a href="#">Contact Us</a></li>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#service-container">Services</a></li>
+            <li class="item"><a href="#client-section">About Us</a></li>
+            <li class="item"><a href="#contact-box">Contact Us</a></li>
         </ul>
     </nav>
     <section id="home">
@@ -30,27 +31,81 @@
         </p>
         <button class="btn">Order now</button>
     </section>
-    <section class="service-container">
+    <section id="service-container">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
             <div class="box">
                 <img src="img/bgimg1.jpg" alt="">
                 <h2 class="h-secondary center">Food Ordering</h2>
-                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, quas? Tenetur ipsum commodi explicabo illum, necessitatibus, aperiam nobis rerum quibusdam vel saepe unde inventore, tempora eligendi repellat ratione nam. Illo dignissimos corporis omnis esse!</p>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, quas? Tenetur ipsum
+                    commodi explicabo illum, necessitatibus, aperiam nobis rerum quibusdam vel saepe unde inventore,
+                    tempora eligendi repellat ratione nam. Illo dignissimos corporis omnis esse!</p>
             </div>
             <div class="box">
-                <img src="img/bgimg1.jpg" alt="">
-                <h2 class="h-secondary center">Food Ordering</h2>
-                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, quas? Tenetur ipsum commodi explicabo illum, necessitatibus, aperiam nobis rerum quibusdam vel saepe unde inventore, tempora eligendi repellat ratione nam. Illo dignissimos corporis omnis esse!</p>
+                <img src="img/pizza.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, quas? Tenetur ipsum
+                    commodi explicabo illum, necessitatibus, aperiam nobis rerum quibusdam vel saepe unde inventore,
+                    tempora eligendi repellat ratione nam. Illo dignissimos corporis omnis esse!</p>
             </div>
             <div class="box">
-                <img src="img/bgimg1.jpg" alt="">
-                <h2 class="h-secondary center">Food Ordering</h2>
-                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, quas? Tenetur ipsum commodi explicabo illum, necessitatibus, aperiam nobis rerum quibusdam vel saepe unde inventore, tempora eligendi repellat ratione nam. Illo dignissimos corporis omnis esse!</p>
+                <img src="https://img.freepik.com/premium-vector/fast-food-delivery-man-deliver-scooter-vector_280599-75.jpg?w=2000"
+                    alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, quas? Tenetur ipsum
+                    commodi explicabo illum, necessitatibus, aperiam nobis rerum quibusdam vel saepe unde inventore,
+                    tempora eligendi repellat ratione nam. Illo dignissimos corporis omnis esse!</p>
             </div>
-
         </div>
     </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="https://www.pngmart.com/files/4/Microsoft-Logo-PNG-Transparent-Image.png" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="https://icon2.cleanpng.com/20171220/dxq/google-png-5a3aafee6ff5c8.9595681415137955664586.jpg"
+                    alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="https://e1.pngegg.com/pngimages/298/168/png-clipart-candied-apples-black-apple-logo-illustration.png"
+                    alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="https://toppng.com/uploads/preview/netflix-logo-png-11593869496jqso5gxgsy.png"
+                    alt="Our client">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact US</h1>
+        <div id="contact-box">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="ph">Phone number:</label>
+                    <input type="phone" id="ph" placeholder="Enter your Phone number" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="message for us" id="message" cols="50" rows="10" autocomplete="off"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.khanjakhaja.com All rights reserved
+        </div>
+    </footer>
 </body>
 
 </html>
