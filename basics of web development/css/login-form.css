@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: 'Rubik Vinyl', cursive;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    border: 2px solid #f2f2f2b8;
+    box-shadow: 5px 5px #f2f2f274;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    line-height: 2;
+    background-color: #f2f2f2;
+    
+}
+
+.heading {
+    text-align: center;
+    display: block;
+}
+
+input[type='email'],
+input[type='password'] {
+    display: block;
+    text-align: center;
+    width: 180px;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 9px auto;
+    font-size: 15px;
+}
+
+.btn {
+    display: block;
+    width: 180px;
+    margin: auto;
+    padding: 8px;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #13c282;
+    cursor: pointer;
+}

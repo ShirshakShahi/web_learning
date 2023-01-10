@@ -1,0 +1,26 @@
+ /* This is like GLOBAL VARIABLE */
+ :root {
+    --primary-color: blue;
+    --danger-color: red;
+    --maxw: 333px;
+}
+
+.box {
+    /* --box-color: violet; */
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    margin: 5px 9px;
+    background-color: var(--primary-color);
+    box-shadow: 3px 3px var(--box-color);
+}
+
+.container {
+    /* --box-color: violet; */
+    max-width: var(--maxw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    border: 3px solid var(--primary-color);
+}
