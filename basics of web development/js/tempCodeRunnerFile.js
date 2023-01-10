@@ -1,1 +1,1 @@
-let a = 50;
+typeof
