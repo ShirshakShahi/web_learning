@@ -28,8 +28,8 @@ let comp1 = 665467;
 let comp2 = 64464;
 console.log("comp1 == comp2 is", comp1 == comp2);
 console.log("comp1!= comp2 is", comp1 != comp2);
-console.log("comp1 == comp2 is", comp1 === comp2);
-console.log("comp1!= comp2 is", comp1 !== comp2);
+console.log("comp1 === comp2 is", comp1 === comp2);
+console.log("comp1!== comp2 is", comp1 !== comp2);
 
 // comparators
 console.log("comp1 > comp2 is", comp1 > comp2);

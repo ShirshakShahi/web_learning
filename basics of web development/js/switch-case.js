@@ -1,5 +1,5 @@
 
-// switch case ion java script
+// switch case in java script
 let flag = 1;
 do {
     let firstNumber = prompt("Enter the value of Number ?");

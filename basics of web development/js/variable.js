@@ -20,7 +20,7 @@ var firstNumber = 100;
 }
 console.log(firstNumber);
 
-// let is block scope and cannot be redeclared
+// let is block scope and cannot be redeclared but can be updated
 
 let secondNumber = 55;
 secondNumber = "shirshak shahi thakuri"; //let can be updated though
@@ -28,13 +28,12 @@ console.log(secondNumber);
 let thirdNumber = 99;
 console.log(thirdNumber);
 
-//const cannot be changed and cannot be assigned again and again
+//const cannot be changed and cannot be assigned again and again and they must be initialized
 
 const author = "hello i am a noob here please help me";
 console.log(author);
 
-let mom;
-mom = "Laxmi Malla Shahi Thakuri";
+const mom = "Laxmi Malla Shahi Thakuri";
 console.log("My mother's name is " + mom);
 
 let bigBrother = null;

@@ -27,5 +27,5 @@ const hi = (x, y) => {
     return (x + y);
 }
 
-let h = hi(2, 3);
+let h = hi(20, 3);
 console.log(h);
