@@ -1,3 +1,2 @@
-function printMarks() {
-
-// }
+num.reverse();
+console.log(num);
