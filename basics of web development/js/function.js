@@ -9,7 +9,7 @@ function averageValues(x, y) {
 // alternate way to make function
 const sum = (p, q) => {
     return p + q;
-}
+} 
 
 /*
 console.log("avg of a and b is ", (a + b) / 2);
@@ -19,6 +19,8 @@ console.log("avg of b and c is ", (c + b) / 2);
 averageValues(a, b);
 averageValues(a, c);
 averageValues(b, c);
+let result = sum(a, c);
+console.log(result);
 console.log(sum(a, c));
 
 
