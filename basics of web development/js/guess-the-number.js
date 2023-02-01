@@ -3,7 +3,7 @@ let max = 100;
 let chance = 0;
 const random =
     Math.floor(Math.random() * (+max - +min)) + +min;
-console.log("Random Number Generated : " + random);
+// console.log("Random Number Generated : " + random);
 let ask;
 do {
 
