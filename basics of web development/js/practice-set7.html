@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praactice set 7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav ul {
+            display: flex;
+            background-color: cyan;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 5px 15px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="navbar">About</a></li>
+            <li><a href="#" id="contact">Contact</a></li>
+            <li><a href="#" class="navbar">Blog</a></li>
+        </ul>
+    </nav>
+
+    <table border="1">
+        <td>Hello</td>
+        <td class="">hello-1</td>
+        <td class="">hello-2</td>
+        <td class="">hello-3</td>
+        <td class="">hello-4</td>
+        <td class="">hello-5</td>
+    </table>
+
+
+
+    <script>
+        let a = document.body.firstElementChild.firstElementChild.firstElementChild.firstElementChild;
+        let b = document.getElementById("contact");
+        let c = document.getElementsByClassName("navbar")[0];
+        a.style.color = "red";
+        b.style.color = "yellow";
+        c.style.color = "green";
+        let bg = document.getElementsByTagName("li");
+        bg = Array.from(bg);
+        bg.forEach((element) => {
+            element.style.background = "red";
+        })
+    </script>
+</body>
+
+</html>

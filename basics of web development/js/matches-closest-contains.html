@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches, Closests and Contains</title>
+</head>
+
+<body>
+    <div class="box" id="id-1">This is element 1<span id="span1">This is span text</span></div>
+    <div class="box" id="id-2">This is element 2</div>
+    <script>
+        let id1 = document.getElementById("id-1");
+        console.log(id1);
+        console.log(id1.matches(".class"));
+        console.log(id1.matches(".box"));
+        console.log(span1.closest(".box"))
+        console.log(id1.contains(span1));
+    </script>
+</body>
+
+</html>
