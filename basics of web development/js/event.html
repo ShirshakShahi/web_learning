@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .btn-1 {
+            display: block;
+            margin: 5px 10px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: gray;
+            background-color: blanchedalmond;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="para" onclick="console.log(' clicked inside paragraph')" onmouseover="console.log('inside para')"
+            onmouseout="console.log('outside para')">Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Cupiditate aliquam a amet facere ad,
+            explicabo iste cum voluptatem consectetur nam voluptates necessitatibus quis, omnis possimus quam adipisci
+            perspiciatis, iure vel quaerat totam qui quo? Deserunt accusantium recusandae commodi eaque, vel sapiente!
+            Dicta, ad architecto illo tempore explicabo modi impedit earum est rem laudantium quia rerum blanditiis
+            laborum sapiente quas doloribus, maxime hic fuga similique, ea illum assumenda. Quibusdam, iusto delectus
+            earum perferendis, dolores numquam, dignissimos repudiandae magnam rem eveniet accusantium? Et eos, dolorum
+            adipisci animi nemo repudiandae ex exercitationem? Aspernatur, vero blanditiis, sint nemo, debitis
+            temporibus doloremque rem quia commodi laboriosam ipsam animi similique fugiat magnam sed excepturi quis?
+            Cupiditate ab veritatis quasi porro aut. Nulla nam corporis dignissimos porro in delectus vel, eius quia
+            repellat quos esse veritatis similique, unde rem officia amet assumenda ipsum, temporibus maiores placeat
+            deserunt atque modi facilis! Officiis quod veritatis sit accusamus natus consequuntur quisquam, vel eveniet,
+            debitis commodi obcaecati impedit quidem. Consequatur praesentium assumenda nobis molestias illo, a rerum
+            hic. Dolores harum vero quibusdam nesciunt ut aspernatur mollitia dolorem, quas iusto quo eum ducimus quidem
+            voluptatum eaque doloremque, ipsa, rerum obcaecati eius aperiam veritatis magnam! Mollitia, expedita ipsum
+            impedit earum dolorum aperiam voluptatibus?</p>
+
+
+        <button class="btn btn-1" onclick="console.clear()" style="display:inline-blo
+        ">click me</button>
+    </div>
+
+    <script>
+
+        let a = document.getElementsByClassName("container");
+        a[0].style.background = "red";
+    </script>
+</body>
+
+</html>
