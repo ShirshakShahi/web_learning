@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
+    </style>
     <style>
         * {
             margin: 0;
@@ -18,24 +22,35 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(225, 225, 84);
             height: 100vh;
         }
 
+        .container::before {
+            content: "";
+            position: absolute;
+            background: url('https://www.lookslikefilm.com/wp-content/uploads/2020/01/Dory-Chamoun2-1024x575.jpg') no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+
+
+        }
+
         .size {
-            height: 100px;
-            width: 100px;
-            margin: 10px;
+            width: 200px;
+            margin: 5px;
         }
 
         .common {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(83, 206, 165);
-            font-family: cursive;
-            border: 2px solid green;
-            border-radius: 20px;
+            background-color: transparent;
+            font-family: 'Bigshot One', cursive;
+            font-size: 2rem;
+            color:rgb(144, 91, 55);
+
 
         }
     </style>
