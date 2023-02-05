@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+
+<body>
+
+    <h2>hello world !!!</h2>
+
+
+
+    <script>
+
+        // synchronous programming example
+
+        // let a = prompt("what is your name?")
+        // let b = prompt("what is your age?")
+        // let c = prompt("what is your number?")
+
+
+        // Asynchronous programming
+        // console.log("Hey this is start of the program");
+        // setTimeout(function (a, b) {
+        //     console.log("hello this is example of asycnchronous example !!!", (a + b));
+        // }, 5000, 5, 15);
+        // console.log("End");
+
+
+        // callback function 
+
+        function loadScript(src, callback) {
+            var script = document.createElement("script");
+            script.src = src;
+            script.onload = function () {
+                console.log("loaded script src = " + script.src)
+            }
+            document.body.appendChild(script);
+            callback();
+        }
+
+        function hello() {
+            console.log("Hello Shirshak Shahi");
+        }
+
+        loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js", hello);
+
+
+
+
+        //call back function 
+
+        // function loadScript(url) {
+        //     const script = document.createElement('script');
+        //     script.url = url;
+        //     script.onload = () => {
+        //         console.log("the source is " + script.url);
+
+        //     }
+        //     document.body.appendChild(script);
+
+        // }
+
+        // loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js");
+
+
+    </script>
+</body>
+
+</html>
