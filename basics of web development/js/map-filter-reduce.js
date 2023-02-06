@@ -27,15 +27,15 @@ console.log(hi);
 
 // Self practice
 let arr = [12, 456, 84, 12, 3486, 4, 165, 1, 5, 684, 64, 984];
-console.log(arr);
-let newArr = arr.map((values) => {
-    return values + 1;
-})
-console.log(newArr);
+// console.log(arr);
+// let newArr = arr.map((values) => {
+//     return values + 1;
+// })
+// console.log(newArr);
 
-arr.forEach((values) => {
-    console.log(values + values);
-})
+// arr.forEach((values) => {
+//     console.log(values + values);
+// })
 
 let myFunction = (values) => {
     return values < 500;

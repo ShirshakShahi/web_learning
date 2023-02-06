@@ -36,7 +36,7 @@
         function loadScript(src, callback) {
             var script = document.createElement("script");
             script.src = src;
-            script.onload = function () {
+            script.onload = () => {
                 console.log("loaded script src = " + script.src)
             }
             document.body.appendChild(script);
